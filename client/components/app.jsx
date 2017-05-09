@@ -1,22 +1,14 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import NavBar from './navBar.jsx';
-
-const propTypes = {
-  children: React.PropTypes.element.isRequired,
-};
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
-        <div id="main-content">
-          {this.props.children}
-        </div>
+        <h1>It's working!!!</h1>
       </div>
     );
   }
 }
-
-App.propTypes = propTypes;

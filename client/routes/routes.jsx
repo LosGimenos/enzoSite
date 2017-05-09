@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import { Router, IndexRoute, Route, hashHistory } from 'react-router';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import NavBar from '../components/navBar.jsx';
 import App from '../components/app.jsx';
 import HeroPage from '../components/heroPage.jsx';
 
-const Routes = () => {
-  return (
-    <Router history={hashHistory}>
-      <Route path="/" component={App}>
-        <IndexRoute component={HeroPage} />
-      </Route>
-    </Router>
-  );
-};
+const Routes = () => (
+  <Router>
+    <div>
+      <NavBar />
+      <Switch>
+          <Route exact path="/" component={HeroPage}/>
+      </Switch>
+    </div>
+  </Router>
+);
 
 export default Routes;
