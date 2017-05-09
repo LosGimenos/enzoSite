@@ -6,13 +6,13 @@ const NavBar = () => {
     <div id="nav-bar">
       <ul id="nav-bar-links">
         <li>
-
+          <Link to="/about">
             <p>About</p>
-
+          </Link>
         </li>
         <li>
 
-            <p>Web</p>
+            <p>Work</p>
 
         </li>
         <li>
@@ -21,11 +21,11 @@ const NavBar = () => {
           </a>
         </li>
         </ul>
-
+          <Link to="/">
             <div className="chalchi">
               <h3>Lorenzo Sari&ntilde;ana</h3>
             </div>
-
+          </Link>
     </div>
   );
 }

@@ -1,0 +1,318 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+h2, h3 {
+  color: #fff;
+  text-decoration: underline;
+}
+
+div {
+  font-family: 'Raleway', sans-serif;
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+    height: 91.5vh;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+      ),
+      url("https://farm8.staticflickr.com/7400/28061983425_2ce5b4182e_z.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#nav-bar {
+    top: 0;
+    background-color: white;
+    height: 3em;
+    padding-top: 1%;
+}
+
+#nav-bar-links {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0px;
+  list-style: none;
+  /*height: 100%;*/
+  width: 100%;
+}
+
+#nav-bar-links li {
+  float: left;
+  margin-left: 2%;
+  margin-top: .5%;
+  /*font-size: 75%;*/
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: dimgray;
+}
+
+#nav-bar a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.chalchi {
+    position: absolute;
+    background: url("http://canamay-te.de/site/wp-content/uploads/thirteen.png");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10em;
+    height: 4em;
+    text-align: center;
+    top: 0;
+    right: 0;
+}
+
+.chalchi h3 {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  top: 3%;
+  margin: 0;
+  font-size: 90%;
+}
+
+#hero-text {
+    position: absolute;
+    color: white;
+    font-size: 200%;
+    margin-left: 60%;
+    margin-top: 20%;
+}
+
+div.about-top,
+div.about-bottom {
+  color: white;
+  width: 100%;
+}
+
+div.about-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.about-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.about-bottom-cred {
+  flex-basis: 25%;
+}
+
+div.about-bottom-info a {
+    text-decoration: none;
+    color: #6C7A89;
+}
+
+div.about-bottom-info a:hover {
+    text-decoration: underline;
+}
+
+div.shrink {
+    font-size: 90%;
+}
+
+div#theatrical-title {
+  text-align: center;
+}
+
+/*
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.accordian {
+  margin-top: 5%;
+  width: 100%; height: 78vh;
+  overflow: hidden;
+}
+
+/*fix flickering?*/
+.accordian ul {
+  width: 2000px;
+}
+
+.accordian li {
+  position: relative;
+  display: block;
+  width: 9em;
+  height: 100%;
+  float: left;
+  border-left: 1px solid #888;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.accordian ul:hover li {width: 10em;}
+.accordian ul li:hover {width: 25em; height: 100%;}
+
+
+.accordian li img {
+  display: block;
+  width: 25em;
+  height: 25em;
+}
+
+.image_title {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0; bottom: 5%;
+  width: 100px;
+}
+
+.image_title a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/* Ya cavo esa cochinada */
+
+#web-project-list {
+  position: relative;
+  left: 12%;
+  margin-top: 5%;
+  width: 85%;
+ /* overflow: scroll;*/
+/*  margin-bottom: 10%;
+*/}
+
+.web-project-item {
+  color: white;
+  width: 30em;
+  height: 15em;
+  text-align: center;
+  float: left;
+  margin: 0 0 1% 1%;
+  border: solid 1px white;
+}
+
+.web-project-item-base {
+  /*postion: relative;*/
+  height: 100%;
+  overflow: hidden;
+}
+
+.web-project-item-base:hover .web-project-item-details {
+  display: flex;
+  animation: fadein .5s;
+}
+
+.web-project-item a {
+  text-decoration: none;
+  color: white;
+}
+
+div.web-project-item-details {
+  height: 15em;
+  background: rgba(0, 0, 0, .75);
+  justify-content: center;
+  align-items: center;
+}
+
+.web-project-title {
+  font-size: 300%;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/************************/
+/*MEDIA QUERY TIME!!*/
+/************************/
+@media screen and (max-width: 980px) {
+  #nav-bar {
+    height: 4em;
+    font-size: 200%;
+  }
+
+  .chalchi {
+    top: 1.25%;
+    background-size: 225px 225px;
+  }
+
+  .chalchi h3 {
+    top: 1%;
+  }
+
+  #hero-text {
+    font-size: 300%;
+  }
+
+div.about-top,
+div.about-bottom {
+  font-size: 175%;
+}
+
+#web-project-list-wrapper {
+  position: relative;
+  /*height: 91vh;*/
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+#web-project-list {
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-project-item {
+  width: 100%;
+  font-size: 150%;
+}
+
+  div#theatrical-title {
+    margin-top: 15%;
+    font-size: 185%;
+  }
+
+  .accordian {
+    margin-top: 30%;
+  }
+
+  #footer {
+    position: fixed;
+    font-size: 165%;
+  }
+}
+
