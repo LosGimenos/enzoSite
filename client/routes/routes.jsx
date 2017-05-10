@@ -4,6 +4,7 @@ import NavBar from '../components/navBar.jsx';
 import App from '../components/app.jsx';
 import HeroPage from '../components/heroPage.jsx';
 import About from '../components/about.jsx';
+import Contact from '../components/contact.jsx';
 
 const Routes = () => (
   <Router>
@@ -12,6 +13,7 @@ const Routes = () => (
       <Switch>
           <Route exact path="/" component={HeroPage}/>
           <Route path="/about" component={About}/>
+          <Route path="/contact" component={Contact}/>
       </Switch>
     </div>
   </Router>

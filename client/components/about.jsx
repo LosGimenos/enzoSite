@@ -11,11 +11,6 @@ const About = () => {
               Devisor
             </h1>
           </div>
-          <div className="about-top-right-h1 clearfix">
-            <h1>
-              Find me here.
-            </h1>
-          </div>
         </div>
             <hr />
         <div className="about-bottom">
@@ -35,23 +30,6 @@ const About = () => {
               Experienced with lighting design,
               sound design, and scoring. <br /> <br />
               Takes some pictures from time to time.
-            </p>
-          </div>
-          <div className="about-bottom-info">
-            <p>email:<br />
-              <a href="mailto:enzosarin@gmail.com">
-                enzosarin at gmail.com
-              </a>
-            </p>
-            <p>instagram:<br />
-              <a href="https://www.instagram.com/spasticyomi/" target="_blank">
-                @spasticyomi
-              </a>
-            </p>
-            <p>flickr:<br />
-              <a href="https://www.flickr.com/photos/lorenzosarinana/" target="_blank">
-                @deRetraido
-              </a>
             </p>
           </div>
         </div>

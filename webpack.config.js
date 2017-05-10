@@ -1,6 +1,7 @@
 const path = require('path');
+const webpack = require('webpack');
 
-module.exports = {
+const config = {
   devtool: 'source-map',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -12,6 +13,9 @@ module.exports = {
     path: path.join(__dirname, 'dist', 'js'),
     filename: 'bundle.js',
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   module: {
     loaders: [
       {
@@ -25,3 +29,5 @@ module.exports = {
     ],
   },
 };
+
+module.exports = config;

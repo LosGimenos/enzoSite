@@ -4,7 +4,9 @@ const HeroPage = () => {
   return (
     <div id="header">
       <div id="hero-text">
-        <p>Hey! I'm Lorenzo! I do things!</p>
+        <p>Wandering between two worlds</p>
+        <p>One dead</p>
+        <p>The other powerless to be born</p>
       </div>
     </div>
   );
