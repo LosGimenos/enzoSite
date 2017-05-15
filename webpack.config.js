@@ -17,14 +17,18 @@ const config = {
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
-    loaders: [
+    rules: [
       {
         test: /.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        query: {
+        options: {
           presets: ['es2015', 'react'],
         },
+      },
+      {
+        test: /\.css$/,
+        loader: 'css-loader'
       },
     ],
   },
