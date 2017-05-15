@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
   devtool: 'source-map',
@@ -13,9 +14,6 @@ const config = {
     path: path.join(__dirname, 'dist', 'js'),
     filename: 'bundle.js',
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
   module: {
     rules: [
       {
@@ -28,10 +26,22 @@ const config = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ExtractTextPlugin.extract({
+          fallbackLoader: 'style-loader',
+          loader: ['css-loader', 'sass-loader'],
+          publicPath: '/dist/stylesheets/'
+        })
       }
     ],
   },
+   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new ExtractTextPlugin({
+      filename: 'styles.css',
+      disabled: false,
+      allChunks: true
+    })
+  ]
 };
 
 module.exports = config;
