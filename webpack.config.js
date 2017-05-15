@@ -23,13 +23,13 @@ const config = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         options: {
-          presets: ['es2015', 'react'],
-        },
+          presets: ['es2015', 'react']
+        }
       },
       {
         test: /\.css$/,
-        loader: 'css-loader'
-      },
+        use: ['style-loader', 'css-loader']
+      }
     ],
   },
 };
