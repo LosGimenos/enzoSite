@@ -6,9 +6,8 @@ const About = () => {
         <div className="about-top">
           <div className="about-top-h1">
             <h1>
-              Creator<br />
-              Collaborator<br />
-              Devisor
+              Sound + Movement<br />
+              Performance Artist<br />
             </h1>
           </div>
         </div>
@@ -17,12 +16,6 @@ const About = () => {
           <div className="about-bottom-cred">
             <p>
               I build stories and I tell stories. <br />
-              Full Stack web developer using <br />
-              CSS, JS, Node, React, Rails, PostgreSQL. <br />
-              Dabbles in Python, Pandas, PHP, D3. <br />
-              Other software proficiences include: <br />
-              Final Cut Pro, Protools, Photoshop, Illustrator,
-              Isadora, QLab and Publisher.
             </p>
             <p>
               Specializes in devised work and creating immersive

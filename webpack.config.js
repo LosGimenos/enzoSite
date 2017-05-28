@@ -30,7 +30,6 @@ const config = {
     ],
   },
    plugins: [
-    new webpack.HotModuleReplacementPlugin()
   ]
 };
 
