@@ -7466,9 +7466,13 @@ var NavBar = function NavBar() {
         'li',
         null,
         _react2.default.createElement(
-          'p',
-          null,
-          'Work'
+          _reactRouterDom.Link,
+          { to: '/work' },
+          _react2.default.createElement(
+            'p',
+            null,
+            'Work'
+          )
         )
       ),
       _react2.default.createElement(
@@ -11185,6 +11189,10 @@ var _contact = __webpack_require__(101);
 
 var _contact2 = _interopRequireDefault(_contact);
 
+var _workList = __webpack_require__(233);
+
+var _workList2 = _interopRequireDefault(_workList);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Routes = function Routes() {
@@ -11200,7 +11208,8 @@ var Routes = function Routes() {
         null,
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _heroPage2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _about2.default }),
-        _react2.default.createElement(_reactRouterDom.Route, { path: '/contact', component: _contact2.default })
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/contact', component: _contact2.default }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/work', component: _workList2.default })
       )
     )
   );
@@ -11471,43 +11480,11 @@ var headerTiles = [{
   title: '&#161;EL SIMIO!',
   company: 'HERE Arts',
   url: 'https://farm6.staticflickr.com/5339/17544198579_e63caaf84b_b.jpg'
-},
-// {
-//   title: 'RAIN/ OF TERROR',
-//   company: 'The Bindery',
-//   url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/rain_sunglasses.jpg?raw=true'
-// },
-// {
-//   title: 'MOUSE IN A JAR',
-//   company: 'The LIDA Project',
-//   url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/mouse.jpg?raw=true'
-// },
-// {
-//   title: 'R.U.R/LOL',
-//   company: 'Work|Space',
-//   url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/rur_lol.jpg?raw=true'
-// },
-// {
-//   title: 'HOT + WAX',
-//   company: 'The LIDA Project',
-//   url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/hot_wax.jpg?raw=true'
-// },
-// {
-//   title: 'RASHOMON',
-//   company: 'Aurora Fox',
-//   url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3ZDFNTjJvMF9ldG8=w1280-h703-iv1'
-// },
-{
+}, {
   title: 'GHOST CARD',
   company: 'Fullstop Collective',
   url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/ghost_card.jpg?raw=true'
-},
-// {
-//   title: 'AUTO DA FE',
-//   company: 'The LIDA Project',
-//   url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3UWMyQnR6enJYT1k=w1280-h703-iv1'
-// },
-{
+}, {
   title: 'UNCLE ROOSTER',
   company: 'Countdown to Zero',
   url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3SHo4b0RUWklHYTA=w1280-h703-iv1'
@@ -11577,7 +11554,7 @@ exports = module.exports = __webpack_require__(105)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  background-color: #000; }\n\n@keyframes fadein {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n#nav-bar {\n  top: 0;\n  background-color: white;\n  height: 3em;\n  padding-top: 1%;\n  font-family: 'Press Start 2P', cursive; }\n\n#nav-bar-links {\n  position: absolute;\n  margin: 0;\n  padding: 0;\n  top: 0px;\n  list-style: none;\n  /*height: 100%;*/\n  width: 100%; }\n\n#nav-bar-links li {\n  float: left;\n  margin-left: 2%;\n  margin-top: .5%;\n  /*font-size: 75%;*/ }\n\n#nav-bar a {\n  text-decoration: none;\n  color: dimgray; }\n\n#nav-bar a:hover {\n  text-decoration: underline;\n  text-decoration-color: white; }\n\n.chalchi {\n  position: absolute;\n  background: url(\"http://canamay-te.de/site/wp-content/uploads/thirteen.png\");\n  background-size: 100px 100px;\n  background-repeat: no-repeat;\n  background-position: center;\n  width: 10em;\n  height: 4em;\n  text-align: center;\n  top: 0;\n  right: 0; }\n\n.chalchi h3 {\n  position: relative;\n  color: black;\n  text-decoration: none;\n  top: 25%;\n  right: 60%;\n  margin: 0;\n  font-size: 90%; }\n\n#header {\n  margin: 0;\n  padding: 0;\n  height: 91.5vh;\n  background: url(\"https://farm8.staticflickr.com/7337/27448372504_7be8f7d992_b.jpg\");\n  background-position: center;\n  background-size: 30em 50em;\n  background-repeat: no-repeat; }\n\n#hero-text {\n  position: absolute;\n  color: white;\n  font-size: 200%;\n  margin-left: 60%;\n  margin-top: 15%;\n  animation: fadein 2s; }\n\ndiv#about {\n  text-align: center;\n  color: #fff; }\n  div#about a {\n    color: #fff; }\n\ndiv.contact {\n  text-align: center;\n  color: #fff; }\n  div.contact a {\n    text-decoration: none;\n    color: #fff; }\n  div.contact a:hover {\n    text-decoration: underline; }\n\n#web-project-list {\n  position: relative;\n  left: 12%;\n  margin-top: 5%;\n  width: 85%;\n  /* overflow: scroll;*/\n  /*  margin-bottom: 10%;\n*/ }\n\n.web-project-item {\n  color: white;\n  width: 30em;\n  height: 15em;\n  text-align: center;\n  float: left;\n  margin: 0 0 1% 1%;\n  border: solid 1px white; }\n\n.web-project-item-base {\n  /*postion: relative;*/\n  height: 100%;\n  overflow: hidden; }\n\n.web-project-item-base:hover .web-project-item-details {\n  display: flex;\n  animation: fadein .5s; }\n\n.web-project-item a {\n  text-decoration: none;\n  color: white; }\n\ndiv.web-project-item-details {\n  height: 15em;\n  background: rgba(0, 0, 0, 0.75);\n  justify-content: center;\n  align-items: center; }\n\n.web-project-title {\n  font-size: 300%; }\n\n@media screen and (max-width: 980px) {\n  #nav-bar {\n    height: 4em;\n    font-size: 200%; }\n  .chalchi {\n    top: 1.25%;\n    background-size: 225px 225px; }\n  .chalchi h3 {\n    top: 1%; }\n  #hero-text {\n    font-size: 300%; }\n  div.about-top,\n  div.about-bottom {\n    font-size: 175%; }\n  #web-project-list-wrapper {\n    position: relative;\n    /*height: 91vh;*/\n    overflow-y: scroll;\n    display: flex;\n    justify-content: center;\n    margin-bottom: 10%; }\n  #web-project-list {\n    left: 0;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center; }\n  .web-project-item {\n    width: 100%;\n    font-size: 150%; }\n  div#theatrical-title {\n    margin-top: 15%;\n    font-size: 185%; }\n  .accordian {\n    margin-top: 30%; }\n  #footer {\n    position: fixed;\n    font-size: 165%; } }\n", ""]);
+exports.push([module.i, "body {\n  background-color: #000; }\n\n@keyframes fadein {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n#nav-bar {\n  top: 0;\n  background-color: white;\n  height: 3em;\n  padding-top: 1%;\n  font-family: 'Press Start 2P', cursive; }\n\n#nav-bar-links {\n  position: absolute;\n  margin: 0;\n  padding: 0;\n  top: 0px;\n  list-style: none;\n  /*height: 100%;*/\n  width: 100%; }\n\n#nav-bar-links li {\n  float: left;\n  margin-left: 2%;\n  margin-top: .5%;\n  /*font-size: 75%;*/ }\n\n#nav-bar a {\n  text-decoration: none;\n  color: dimgray; }\n\n#nav-bar a:hover {\n  text-decoration: underline;\n  text-decoration-color: white; }\n\n.chalchi {\n  position: absolute;\n  background: url(\"http://canamay-te.de/site/wp-content/uploads/thirteen.png\");\n  background-size: 100px 100px;\n  background-repeat: no-repeat;\n  background-position: center;\n  width: 10em;\n  height: 4em;\n  text-align: center;\n  top: 0;\n  right: 0; }\n\n.chalchi h3 {\n  position: relative;\n  color: black;\n  text-decoration: none;\n  top: 25%;\n  right: 60%;\n  margin: 0;\n  font-size: 90%; }\n\n#header {\n  margin: 0;\n  padding: 0;\n  height: 91.5vh;\n  background: url(\"https://farm8.staticflickr.com/7337/27448372504_7be8f7d992_b.jpg\");\n  background-position: center;\n  background-size: 30em 50em;\n  background-repeat: no-repeat; }\n\n#hero-text {\n  position: absolute;\n  color: white;\n  font-size: 200%;\n  margin-left: 60%;\n  margin-top: 15%;\n  animation: fadein 2s; }\n\ndiv#about {\n  text-align: center;\n  color: #fff; }\n  div#about a {\n    color: #fff; }\n\ndiv.contact {\n  text-align: center;\n  color: #fff; }\n  div.contact a {\n    text-decoration: none;\n    color: #fff; }\n  div.contact a:hover {\n    text-decoration: underline; }\n\ndiv.work-item {\n  height: 100%;\n  width: 100%; }\n\ndiv.work-item__info {\n  position: relative;\n  width: 90%;\n  top: 1em;\n  left: 1em; }\n\ndiv.work-list {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-auto-rows: minmax(100px, 450px);\n  color: #fff; }\n\n@media screen and (max-width: 980px) {\n  #nav-bar {\n    height: 4em;\n    font-size: 200%; }\n  .chalchi {\n    top: 1.25%;\n    background-size: 225px 225px; }\n  .chalchi h3 {\n    top: 1%; }\n  #hero-text {\n    font-size: 300%; }\n  div.about-top,\n  div.about-bottom {\n    font-size: 175%; }\n  #web-project-list-wrapper {\n    position: relative;\n    /*height: 91vh;*/\n    overflow-y: scroll;\n    display: flex;\n    justify-content: center;\n    margin-bottom: 10%; }\n  #web-project-list {\n    left: 0;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center; }\n  .web-project-item {\n    width: 100%;\n    font-size: 150%; }\n  div#theatrical-title {\n    margin-top: 15%;\n    font-size: 185%; }\n  .accordian {\n    margin-top: 30%; }\n  #footer {\n    position: fixed;\n    font-size: 165%; } }\n", ""]);
 
 // exports
 
@@ -26353,6 +26330,204 @@ var valueEqual = function valueEqual(a, b) {
 };
 
 exports.default = valueEqual;
+
+/***/ }),
+/* 233 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _workItem = __webpack_require__(234);
+
+var _workItem2 = _interopRequireDefault(_workItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var WorkList = function (_Component) {
+  _inherits(WorkList, _Component);
+
+  function WorkList() {
+    _classCallCheck(this, WorkList);
+
+    var _this = _possibleConstructorReturn(this, (WorkList.__proto__ || Object.getPrototypeOf(WorkList)).call(this));
+
+    _this.state = {
+      projects: [{
+        title: 'RAIN/ OF TERROR',
+        company: 'The Bindery',
+        role: 'Performer, Devisor',
+        url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/rain_sunglasses.jpg?raw=true'
+      }, {
+        title: 'MOUSE IN A JAR',
+        company: 'The LIDA Project',
+        role: 'Performer',
+        url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/mouse.jpg?raw=true'
+      }, {
+        title: 'R.U.R/LOL',
+        company: 'Work | Space',
+        role: 'Director, Devisor',
+        url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/rur_lol.jpg?raw=true'
+      }, {
+        title: 'HOT + WAX',
+        company: 'The LIDA Project',
+        role: 'Performer, Devisor',
+        url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/hot_wax.jpg?raw=true'
+      }, {
+        title: 'RASHOMON',
+        company: 'Aurora Fox',
+        role: 'Performer',
+        url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3ZDFNTjJvMF9ldG8=w1280-h703-iv1'
+      }, {
+        title: 'AUTO DA FE',
+        company: 'The LIDA Project',
+        role: 'Performer',
+        url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3UWMyQnR6enJYT1k=w1280-h703-iv1'
+      }, {
+        title: 'ADD IT UP',
+        company: 'The LIDA Project',
+        role: 'Performer',
+        url: 'https://farm8.staticflickr.com/7400/28061983425_2ce5b4182e_c.jpg'
+      }, {
+        title: '¡EL SIMIO!',
+        company: 'HERE Arts',
+        role: 'Performer, Translator',
+        url: 'https://farm6.staticflickr.com/5339/17544198579_e63caaf84b_b.jpg'
+      }, {
+        title: 'GHOST CARD',
+        company: 'Fullstop Collective',
+        role: 'Performer, Devisor',
+        url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/ghost_card.jpg?raw=true'
+      }, {
+        title: 'UNCLE ROOSTER',
+        company: 'Countdown to Zero',
+        role: 'Performer',
+        url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3SHo4b0RUWklHYTA=w1280-h703-iv1'
+      }, {
+        title: 'NOW I LAY ME DOWN TO SLEEP',
+        company: 'The LIDA Project',
+        role: 'Performer, Devisor',
+        url: 'https://lh3.google.com/u/0/d/0B2nzr3PvuUz3WlRpNjNZSkhTRTA=w1280-h703-iv1'
+      }, {
+        title: 'HEADS',
+        company: 'And Toto Too',
+        role: 'Performer',
+        url: 'https://lh3.google.com/u/0/d/0B2nzr3PvuUz3QkgtNkoyZW5uNDA=w1280-h703-iv1'
+      }]
+    };
+    return _this;
+  }
+
+  _createClass(WorkList, [{
+    key: 'render',
+    value: function render() {
+      var workProjects = this.state.projects.map(function (project, index) {
+        return _react2.default.createElement(
+          'div',
+          { className: 'work-list__item', key: index },
+          _react2.default.createElement(_workItem2.default, {
+            title: project.title,
+            company: project.company,
+            role: project.role,
+            imgSrc: project.url
+          })
+        );
+      });
+      return _react2.default.createElement(
+        'div',
+        { className: 'work-list' },
+        workProjects
+      );
+    }
+  }]);
+
+  return WorkList;
+}(_react.Component);
+
+exports.default = WorkList;
+
+/***/ }),
+/* 234 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(8);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var propTypes = {
+  title: _propTypes2.default.string,
+  imgSrc: _propTypes2.default.string,
+  company: _propTypes2.default.string,
+  role: _propTypes2.default.string
+};
+
+var WorkItem = function WorkItem(_ref) {
+  var title = _ref.title,
+      imgSrc = _ref.imgSrc,
+      company = _ref.company,
+      role = _ref.role;
+
+  var divStyle = {
+    background: 'url(\'' + imgSrc + '\')',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat'
+  };
+  return _react2.default.createElement(
+    'div',
+    { className: 'work-item', style: divStyle },
+    _react2.default.createElement(
+      'div',
+      { className: 'work-item__info' },
+      _react2.default.createElement(
+        'h3',
+        { className: 'work-item__title' },
+        title
+      ),
+      _react2.default.createElement(
+        'p',
+        null,
+        '- ',
+        company,
+        ' (',
+        role,
+        ')'
+      )
+    )
+  );
+};
+
+WorkItem.propTypes = propTypes;
+
+exports.default = WorkItem;
 
 /***/ })
 /******/ ]);

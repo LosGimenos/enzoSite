@@ -22,41 +22,11 @@ const headerTiles = [
     company: 'HERE Arts',
     url: 'https://farm6.staticflickr.com/5339/17544198579_e63caaf84b_b.jpg'
   },
-  // {
-  //   title: 'RAIN/ OF TERROR',
-  //   company: 'The Bindery',
-  //   url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/rain_sunglasses.jpg?raw=true'
-  // },
-  // {
-  //   title: 'MOUSE IN A JAR',
-  //   company: 'The LIDA Project',
-  //   url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/mouse.jpg?raw=true'
-  // },
-  // {
-  //   title: 'R.U.R/LOL',
-  //   company: 'Work|Space',
-  //   url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/rur_lol.jpg?raw=true'
-  // },
-  // {
-  //   title: 'HOT + WAX',
-  //   company: 'The LIDA Project',
-  //   url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/hot_wax.jpg?raw=true'
-  // },
-  // {
-  //   title: 'RASHOMON',
-  //   company: 'Aurora Fox',
-  //   url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3ZDFNTjJvMF9ldG8=w1280-h703-iv1'
-  // },
   {
     title: 'GHOST CARD',
     company: 'Fullstop Collective',
     url: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/ghost_card.jpg?raw=true'
   },
-  // {
-  //   title: 'AUTO DA FE',
-  //   company: 'The LIDA Project',
-  //   url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3UWMyQnR6enJYT1k=w1280-h703-iv1'
-  // },
   {
     title: 'UNCLE ROOSTER',
     company: 'Countdown to Zero',

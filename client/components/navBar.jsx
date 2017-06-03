@@ -11,9 +11,9 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-
+          <Link to="/work">
             <p>Work</p>
-
+          </Link>
         </li>
         <li>
           <a href="https://losgimenos.github.io/enzoThinks/" target="_blank">
