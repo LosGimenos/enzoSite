@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact">
       <div>
         <h1>
           Find me here.
@@ -16,6 +16,11 @@ const Contact = () => {
         </p>
         <p>instagram:<br />
           <a href="https://www.instagram.com/spasticyomi/" target="_blank">
+            @spasticyomi
+          </a>
+        </p>
+        <p>snapchat:<br />
+          <a href="https://www.snapchat.com/" target="_blank">
             @spasticyomi
           </a>
         </p>
