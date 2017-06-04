@@ -14,6 +14,7 @@ const WorkItem = ({ title, imgSrc, company, role }) => {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
   };
+
   return (
     <div className='work-item' style={divStyle}>
       <div className='work-item__info'>

@@ -1,9 +1,12 @@
-div.work-list__item {
-}
-
 div.work-item {
   height: 100%;
   width: 100%;
+  color: transparent;
+}
+
+div.work-item:hover {
+  color: $white;
+  animation: fadein .5s;
 }
 
 div.work-item__info {

@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 const config = {
   devtool: 'source-map',
@@ -30,7 +31,15 @@ const config = {
     ],
   },
    plugins: [
-  ]
+     new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 8080,
+      proxy: 'http://localhost:3000/'
+      },
+      {
+        reload: false
+      })
+    ]
 };
 
 module.exports = config;
