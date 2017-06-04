@@ -44,23 +44,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const header = document.getElementById('header');
   let counter = 0;
 
-  setInterval( () => {
-    header.style.background =
-      `url(${ headerTiles[counter].url })`;
-    header.style.backgroundPosition = "center";
-    header.style.backgroundSize = "cover";
-    header.style.backgroundRepeat = 'no-repeat';
-    heroText.innerHTML =
-      `<h1>${ headerTiles[counter].title }</h1>
-       <p>- ${ headerTiles[counter].company }</p>`;
+  if (document.body.clientWidth > 980) {
 
-    if (counter == headerTiles.length - 1) {
-      counter = 0;
-    } else {
-      counter += 1;
-    }
+    setInterval( () => {
+      header.style.background =
+        `url(${ headerTiles[counter].url })`;
+      header.style.backgroundPosition = "center";
+      header.style.backgroundSize = "cover";
+      header.style.backgroundRepeat = 'no-repeat';
+      heroText.innerHTML =
+        `<h1>${ headerTiles[counter].title }</h1>
+         <p>- ${ headerTiles[counter].company }</p>`;
 
-  }, 4000);
+      if (counter == headerTiles.length - 1) {
+        counter = 0;
+      } else {
+        counter += 1;
+      }
+
+    }, 4000);
+  }
+
+
+
+
 })
 
 export default HeroPage;

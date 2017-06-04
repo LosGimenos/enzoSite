@@ -2,6 +2,7 @@ div.work-item {
   height: 100%;
   width: 100%;
   color: transparent;
+  font-family: 'Playfair Display', serif;
 }
 
 div.work-item:hover {
@@ -12,6 +13,11 @@ div.work-item:hover {
 div.work-item__info {
   position: relative;
   width: 90%;
+  height: 90%;
   top: 1em;
   left: 1em;
+}
+
+div.work-item__info:hover {
+  animation: scroll 1s;
 }

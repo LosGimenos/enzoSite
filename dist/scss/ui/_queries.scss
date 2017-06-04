@@ -1,4 +1,18 @@
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 980px) {
+  #nav-bar {
+    height: 4em;
+    font-size: 200%;
+  }
+
+  .chalchi {
+    top: 1.25%;
+    background-size: 225px 225px;
+  }
+
+  .chalchi h3 {
+    top: 1%;
+  }
+
   #nav-bar-links {
     font-size: 150%;
   }
@@ -32,31 +46,13 @@
     width: 40%;
     top: 70%;
   }
-}
-
-
-@media screen and (max-width: 980px) {
-  #nav-bar {
-    height: 4em;
-    font-size: 200%;
-  }
-
-  .chalchi {
-    top: 1.25%;
-    background-size: 225px 225px;
-  }
-
-  .chalchi h3 {
-    top: 1%;
-  }
 
   #hero-text {
     font-size: 300%;
   }
 
-div.about-top,
-div.about-bottom {
-  font-size: 175%;
-}
-
+  div.about-top,
+  div.about-bottom {
+    font-size: 175%;
+  }
 }
