@@ -33,8 +33,8 @@ const config = {
    plugins: [
      new BrowserSyncPlugin({
       host: 'localhost',
-      port: 8080,
-      proxy: 'http://localhost:3000/'
+      port: 3000,
+      proxy: 'http://localhost:8080/'
       },
       {
         reload: false
