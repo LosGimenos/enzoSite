@@ -11487,7 +11487,7 @@ var headerTiles = [{
 }, {
   title: 'UNCLE ROOSTER',
   company: 'Countdown to Zero',
-  url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3SHo4b0RUWklHYTA=w1280-h703-iv1'
+  url: 'https://github.com/LosGimenos/enzoSite/blob/gh-pages/img/Uncle%20Rooster.jpg?raw=true'
 }, {
   title: 'JUMPING OFF AN EFFING TREE',
   company: 'Some Upstate Tree',
@@ -11649,12 +11649,12 @@ var WorkList = function (_Component) {
         title: 'RASHOMON',
         company: 'Aurora Fox',
         role: 'Performer',
-        url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3ZDFNTjJvMF9ldG8=w1280-h703-iv1'
+        url: 'https://github.com/LosGimenos/enzoSite/blob/gh-pages/img/Rashomon.jpg?raw=true'
       }, {
         title: 'AUTO DA FE',
         company: 'The LIDA Project',
         role: 'Performer',
-        url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3UWMyQnR6enJYT1k=w1280-h703-iv1'
+        url: 'https://github.com/LosGimenos/enzoSite/blob/gh-pages/img/Auto.jpg?raw=true'
       }, {
         title: 'ADD IT UP',
         company: 'The LIDA Project',
@@ -11674,17 +11674,17 @@ var WorkList = function (_Component) {
         title: 'UNCLE ROOSTER',
         company: 'Countdown to Zero',
         role: 'Performer',
-        url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3SHo4b0RUWklHYTA=w1280-h703-iv1'
+        url: 'https://github.com/LosGimenos/enzoSite/blob/gh-pages/img/Uncle%20Rooster.jpg?raw=true'
       }, {
         title: 'NOW I LAY ME DOWN TO SLEEP',
         company: 'The LIDA Project',
         role: 'Performer, Devisor',
-        url: 'https://lh3.google.com/u/0/d/0B2nzr3PvuUz3WlRpNjNZSkhTRTA=w1280-h703-iv1'
+        url: 'https://github.com/LosGimenos/enzoSite/blob/gh-pages/img/sleep.jpg?raw=true'
       }, {
         title: 'HEADS',
         company: 'And Toto Too',
         role: 'Performer',
-        url: 'https://lh3.google.com/u/0/d/0B2nzr3PvuUz3QkgtNkoyZW5uNDA=w1280-h703-iv1'
+        url: 'https://github.com/LosGimenos/enzoSite/blob/gh-pages/img/heads.jpg?raw=true'
       }]
     };
     return _this;

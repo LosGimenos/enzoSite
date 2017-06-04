@@ -30,7 +30,7 @@ const headerTiles = [
   {
     title: 'UNCLE ROOSTER',
     company: 'Countdown to Zero',
-    url: 'https://lh3.google.com/u/1/d/0B2nzr3PvuUz3SHo4b0RUWklHYTA=w1280-h703-iv1'
+    url: 'https://github.com/LosGimenos/enzoSite/blob/gh-pages/img/Uncle%20Rooster.jpg?raw=true'
   },
   {
     title: 'JUMPING OFF AN EFFING TREE',
