@@ -40,13 +40,11 @@ const About = () => {
               at HERE Arts in addition to the site-specific piece
               ’Ghostcard’ <br />
               performed at the Hudson River Park and at the Socrates
-              Sculpture Park. <br />
+              Sculpture Park and 'Uncle Rooster' at The Brick.<br />
               <br />
-              Next up is ’Uncle Rooster’ for The Brick Theater’s <span>
-              <a href="http://bricktheater.com/" target="_blank">
-              THIS IS NOT NORMAL
-              </a>
-              </span> festival.
+              Next up is the 6th Annual One Minute Play Festival at <br/>
+              the <a href='https://www.intartheatre.org/'>
+              <span>INTAR Theatre</span></a>.
             </p>
           </div>
         </div>

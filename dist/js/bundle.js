@@ -11334,20 +11334,22 @@ var About = function About() {
           _react2.default.createElement("br", null),
           "at HERE Arts in addition to the site-specific piece \u2019Ghostcard\u2019 ",
           _react2.default.createElement("br", null),
-          "performed at the Hudson River Park and at the Socrates Sculpture Park. ",
+          "performed at the Hudson River Park and at the Socrates Sculpture Park and 'Uncle Rooster' at The Brick.",
           _react2.default.createElement("br", null),
           _react2.default.createElement("br", null),
-          "Next up is \u2019Uncle Rooster\u2019 for The Brick Theater\u2019s ",
+          "Next up is the 6th Annual One Minute Play Festival at ",
+          _react2.default.createElement("br", null),
+          "the ",
           _react2.default.createElement(
-            "span",
-            null,
+            "a",
+            { href: "https://www.intartheatre.org/" },
             _react2.default.createElement(
-              "a",
-              { href: "http://bricktheater.com/", target: "_blank" },
-              "THIS IS NOT NORMAL"
+              "span",
+              null,
+              "INTAR Theatre"
             )
           ),
-          " festival."
+          "."
         )
       )
     )
@@ -11756,7 +11758,7 @@ exports = module.exports = __webpack_require__(107)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  background-color: #000; }\n\n.hidden {\n  display: none; }\n\n@keyframes fadein {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes scroll {\n  from {\n    left: 0px; }\n  to {\n    left: 1em; } }\n\n#nav-bar {\n  top: 0;\n  background-color: white;\n  height: 3em;\n  padding-top: 1%; }\n\n#nav-bar-links {\n  position: absolute;\n  margin: 0;\n  padding: 0;\n  top: 0px;\n  list-style: none;\n  /*height: 100%;*/\n  width: 100%; }\n\n#nav-bar-links li {\n  float: left;\n  margin-left: 2%;\n  margin-top: .5%;\n  /*font-size: 75%;*/ }\n\n#nav-bar a {\n  text-decoration: none;\n  color: dimgray; }\n\n#nav-bar a:hover {\n  text-decoration: underline;\n  text-decoration-color: white; }\n\n.chalchi {\n  position: absolute;\n  background: url(\"https://github.com/LosGimenos/enzoSite/blob/gh-pages/img/maht.png?raw=true\");\n  background-size: 100px 100px;\n  background-repeat: no-repeat;\n  background-position: center;\n  width: 10em;\n  height: 4em;\n  text-align: center;\n  top: 0;\n  right: 0; }\n\n.chalchi h3 {\n  position: relative;\n  color: black;\n  text-decoration: none;\n  top: 3%;\n  margin: 0;\n  font-size: 90%; }\n\n#header {\n  margin: 0;\n  padding: 0;\n  height: 91.25vh;\n  background: url(\"https://farm8.staticflickr.com/7337/27448372504_7be8f7d992_b.jpg\");\n  background-position: center;\n  background-size: 30em 50em;\n  background-repeat: no-repeat; }\n\n#hero-text {\n  position: absolute;\n  color: white;\n  font-size: 200%;\n  margin-left: 60%;\n  margin-top: 15%;\n  animation: fadein 2s; }\n\ndiv#about {\n  text-align: center;\n  color: #fff; }\n  div#about a {\n    color: #fff; }\n\ndiv.contact {\n  text-align: center;\n  color: #fff; }\n  div.contact a {\n    text-decoration: none;\n    color: #fff; }\n  div.contact a:hover {\n    text-decoration: underline; }\n\ndiv.work-item {\n  height: 100%;\n  width: 100%;\n  color: transparent;\n  font-family: 'Playfair Display', serif; }\n\ndiv.work-item:hover {\n  color: #fff;\n  animation: fadein .5s; }\n\ndiv.work-item__info {\n  position: relative;\n  width: 90%;\n  height: 90%;\n  top: 1em;\n  left: 1em; }\n\ndiv.work-item__info:hover {\n  animation: scroll 1s; }\n\ndiv.work-list {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-auto-rows: minmax(100px, 450px);\n  color: #fff; }\n\n@media screen and (max-width: 980px) {\n  #nav-bar {\n    height: 4em;\n    font-size: 200%; }\n  .chalchi {\n    position: relative;\n    width: 25%;\n    left: 73%;\n    background-size: 7em 7em; }\n  .chalchi h3 {\n    top: 1%; }\n  #nav-bar-links {\n    font-size: 150%; }\n  #header {\n    background-size: cover; }\n  div.about-bottom-cred {\n    margin: auto;\n    font-size: 175%;\n    width: 700px; }\n  div.contact {\n    font-size: 400%; }\n  div.work-list {\n    display: block; }\n  div.work-list__item {\n    height: 800px; }\n  div.work-item__info {\n    color: #fff;\n    font-size: 250%;\n    position: relative;\n    width: 40%;\n    top: 70%; }\n  #hero-text {\n    font-size: 300%; }\n  div.about-top,\n  div.about-bottom {\n    font-size: 175%; } }\n", ""]);
+exports.push([module.i, "body {\n  background-color: #000; }\n\n.hidden {\n  display: none; }\n\n@keyframes fadein {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes scroll {\n  from {\n    left: 0px; }\n  to {\n    left: 1em; } }\n\n#nav-bar {\n  top: 0;\n  background-color: #fff;\n  height: 3em;\n  padding-top: 1%; }\n\n#nav-bar-links {\n  position: absolute;\n  margin: 0;\n  padding: 0;\n  top: 0px;\n  list-style: none;\n  width: 100%; }\n\n#nav-bar-links li {\n  float: left;\n  margin-left: 2%;\n  margin-top: .5%; }\n\n#nav-bar a {\n  text-decoration: none;\n  color: dimgray; }\n\n#nav-bar a:hover {\n  text-decoration: underline;\n  text-decoration-color: #fff; }\n\n.chalchi {\n  position: absolute;\n  background: url(\"https://github.com/LosGimenos/enzoSite/blob/gh-pages/img/maht.png?raw=true\");\n  background-size: 100px 100px;\n  background-repeat: no-repeat;\n  background-position: center;\n  width: 10em;\n  height: 4em;\n  text-align: center;\n  top: 0;\n  right: 0; }\n\n.chalchi h3 {\n  position: relative;\n  color: #000;\n  text-decoration: none;\n  top: 3%;\n  margin: 0;\n  font-size: 90%; }\n\n#header {\n  margin: 0;\n  padding: 0;\n  height: 91.25vh;\n  background: url(\"https://farm8.staticflickr.com/7337/27448372504_7be8f7d992_b.jpg\");\n  background-position: center;\n  background-size: 30em 50em;\n  background-repeat: no-repeat; }\n\n#hero-text {\n  position: absolute;\n  color: #fff;\n  font-size: 200%;\n  margin-left: 60%;\n  margin-top: 15%;\n  animation: fadein 2s; }\n\ndiv#about {\n  text-align: center;\n  color: #fff; }\n  div#about a {\n    color: #fff; }\n\ndiv.contact {\n  text-align: center;\n  color: #fff; }\n  div.contact a {\n    text-decoration: none;\n    color: #fff; }\n  div.contact a:hover {\n    text-decoration: underline; }\n\ndiv.work-item {\n  flex: 1 1 500px;\n  height: 100%;\n  width: 100%;\n  color: transparent;\n  font-family: 'Playfair Display', serif; }\n\ndiv.work-item:hover {\n  color: #fff;\n  animation: fadein .5s; }\n\ndiv.work-item__info {\n  position: relative;\n  width: 90%;\n  height: 90%;\n  top: 1em;\n  left: 1em; }\n\ndiv.work-item__info:hover {\n  animation: scroll 1s; }\n\ndiv.work-list {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-auto-rows: minmax(100px, 450px);\n  color: #fff; }\n\n@media screen and (max-width: 980px) {\n  #nav-bar {\n    height: 4em;\n    font-size: 200%; }\n  .chalchi {\n    position: relative;\n    width: 25%;\n    left: 73%;\n    background-size: 7em 7em; }\n  .chalchi h3 {\n    top: 1%; }\n  #nav-bar-links {\n    font-size: 150%; }\n  #header {\n    background-size: cover; }\n  div.about-bottom-cred {\n    margin: auto;\n    font-size: 175%;\n    width: 700px; }\n  div.contact {\n    font-size: 400%; }\n  div.work-list {\n    display: block; }\n  div.work-list__item {\n    height: 800px; }\n  div.work-item__info {\n    color: #fff;\n    font-size: 250%;\n    position: relative;\n    width: 40%;\n    top: 70%; }\n  #hero-text {\n    font-size: 300%; }\n  div.about-top,\n  div.about-bottom {\n    font-size: 175%; } }\n", ""]);
 
 // exports
 

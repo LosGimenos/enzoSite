@@ -6,13 +6,11 @@
     background-position: center;
     background-size: 30em 50em;
     background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
 }
 
 #hero-text {
     position: absolute;
-    color: white;
+    color: $white;
     font-size: 200%;
     margin-left: 60%;
     margin-top: 15%;
